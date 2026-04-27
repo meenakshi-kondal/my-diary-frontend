@@ -1,0 +1,17 @@
+:root {
+  --bg: #f8fafc;          /* soft white background */
+  --card: #ffffff;        /* clean white cards */
+  --primary: #f5c7e4;     /* bright blue (modern accent) */
+  --primary-hover: #e293c5;
+
+  --text: #0f172a;        /* dark text */
+  --muted: #64748b;       /* secondary text */
+
+  --secondary: #64748b; 
+  --secondary-hover: #4b5563; 
+  --danger: #ef4444cc;      /* red cancel */
+  --danger-hover: #ea3a3a;
+
+  --border: #e2e8f0;      /* soft border */
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
