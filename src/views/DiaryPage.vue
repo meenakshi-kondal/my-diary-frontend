@@ -26,7 +26,7 @@
       <textarea
         v-model="content"
         @input="handleInput"
-        maxlength="500"
+        maxlength="2100"
         spellcheck="false"
         autocomplete="off"
         autocorrect="off"
@@ -65,8 +65,8 @@ export default {
   },
   methods: {
     handleInput: debounce(function () {
-      if (this.content.length > 500) {
-        this.content = this.content.slice(0, 500);
+      if (this.content.length > 2200) {
+        this.content = this.content.slice(0, 2200);
       }
       this.autoSave();
     }, 1000),
@@ -102,7 +102,7 @@ export default {
     async goNext() {
       if (!this.diary) return;
 
-      if (this.content.length < 500) {
+      if (this.content.length < 2200) {
         alert("Fill this page before going to next");
         return;
       }
