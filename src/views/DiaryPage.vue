@@ -102,7 +102,7 @@ export default {
     async goNext() {
       if (!this.diary) return;
 
-      if (this.content.length < 2000) {
+      if (this.content.length < 1000) {
         alert("Fill this page before going to next");
         return;
       }
